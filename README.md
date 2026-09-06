@@ -144,6 +144,26 @@ Anki的设定上，
         ipad: true,
 ...
 ```
+并在样式中添加
+```
+.KanaInput {
+  width: 100%;
+  padding: 10px 8px 14px;
+  text-align: center;
+
+  border-left: 1px solid var(--border);
+  border-right: 1px solid var(--border);
+}
+
+.KanaInput #typeans {
+  display: block;
+  width: 12em;
+  max-width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  font-size: var(--text-xl);
+}
+```
 添加打字框是为了可以确保自己记住了而不是感觉自己记住了。关闭了卡片正面的例句是为了防止通过例句记住意思而没有通过单词记住意思。
 
 ## 不推荐的内容
