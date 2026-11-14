@@ -16,6 +16,9 @@
     </h1>
     <div class="VocabAudio"></div>
   </header>
+  <div class="KanaInput">
+    {{type:VocabFurigana}}
+  </div>
 
   <ul class="SentenceList">
     {{#SentKanji1}}
@@ -387,13 +390,13 @@
       return
     }
     if (mode === 'examples') {
-      let shown = false
-      list.querySelectorAll('.Sentence').forEach((el, i) => {
+    let shown = false
+    list.querySelectorAll('.Sentence').forEach((el, i) => {
         const show = getType(i) === '例'
-        el.style.display = show ? '' : 'none'
-        if (show) shown = true
-      })
-      if (!shown) list.style.display = 'none'
+      el.style.display = show ? '' : 'none'
+      if (show) shown = true
+    })
+    if (!shown) list.style.display = 'none'
     }
   }
 

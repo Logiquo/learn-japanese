@@ -29,6 +29,25 @@ body {
   line-height: inherit;
 }
 
+/* 假名输入区 */
+.KanaInput {
+  width: 100%;
+  padding: 10px 8px 14px;
+  text-align: center;
+
+  border-left: 1px solid var(--border);
+  border-right: 1px solid var(--border);
+}
+
+.KanaInput #typeans {
+  display: block;
+  width: 12em;
+  max-width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  font-size: var(--text-xl);
+}
+
 h1,
 h2,
 h3,
